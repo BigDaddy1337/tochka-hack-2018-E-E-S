@@ -3,7 +3,7 @@ package postgres
 import(
 	"github.com/go-pg/pg"
 	//"github.com/go-pg/pg/orm"
-	"../types"
+	"types"
 )
 
 type PostgresCli interface {

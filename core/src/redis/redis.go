@@ -5,7 +5,7 @@ import(
 )
 
 type RedisCli interface {
-	Connect(pgAddr string) (RedisSess, error)
+	Connect(redisAddr string, redisPass string) (RedisSess, error)
 }
 
 type RedisSess struct{

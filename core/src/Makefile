@@ -4,8 +4,8 @@ PACKAGE=""
 default: get-deps
 
 # build go bin
-# build:
-#	@go build -o ./ ./
+build:
+	@go build -o ./bin/core ./core/main.go
 
 # get all deps
 get-deps:

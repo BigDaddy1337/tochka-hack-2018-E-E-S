@@ -1,3 +1,4 @@
 .idea
 /core/bin/
 /core/pkg/
+/core/src/bin/
