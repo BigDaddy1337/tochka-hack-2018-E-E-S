@@ -27,6 +27,8 @@ func BackgroundConnector(
 	return pgSess, redisSess, err
 }
 
+func Pipeline(){}
+
 func main() {
 	psSess, redisSess, err := BackgroundConnector(
 		config.PostgresAddr, config.PostgresUser, config.PostgresPassword, config.PostgresDatabase, config.RedisAddr, config.RedisPass)
@@ -38,4 +40,7 @@ func main() {
 	fmt.Println(&psSess, &redisSess)
 
 	logrus.Info("[CONNECTOR] Connection to postgres and redis - ok.")
+
+	Pipeline()
+
 }
